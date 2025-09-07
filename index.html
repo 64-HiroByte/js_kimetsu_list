@@ -15,7 +15,7 @@
     <div class="container vh-100 bg-light position-relative">
       <h1 class="text-center pt-5 pb-3">鬼滅の刃 キャラクター</h1>
       <!-- フォーム -->
-      <form id="js-radio-selector" class="d-flex justify-content-center">
+      <form id="js-radios" class="d-flex justify-content-center">
         <!-- 全キャラクター -->
         <div class="form-check form-check-inline">
           <input
@@ -62,18 +62,21 @@
         </div>
       </form>
 
-      <ul id="character-list" class="px-5">
+      <ul class="px-5">
         <!-- スピナー -->
         <div
-          id="spinner"
+          id="js-spinner"
           class="d-flex d-none position-absolute top-50 start-50 translate-middle"
         >
           <span class="visually-hidde text-secondary">Now Loading...</span>
           <div class="spinner-border text-info" role="status"></div>
         </div>
         <!-- キャラクター一覧 -->
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-          <div class="col">
+        <div
+          id="js-character-list"
+          class="row row-cols-1 row-cols-md-3 g-4 mt-3"
+        >
+          <!-- <div class="col">
             <div class="card h-100 bg-dark shadow">
               <img
                 src="saikorostakesenpai.jpg"
@@ -89,75 +92,7 @@
                 </h4>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 bg-dark shadow">
-              <img
-                src="saikorostakesenpai.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title text-center text-warning fst-italic">
-                  鬼殺隊
-                </h5>
-                <h4 class="card-title text-center text-light fw-bold mt-3 mb-">
-                  サイコロステーキ先輩
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 bg-dark shadow">
-              <img
-                src="saikorostakesenpai.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title text-center text-warning fst-italic">
-                  鬼殺隊
-                </h5>
-                <h4 class="card-title text-center text-light fw-bold mt-3 mb-">
-                  サイコロステーキ先輩
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 bg-dark shadow">
-              <img
-                src="saikorostakesenpai.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title text-center text-warning fst-italic">
-                  鬼殺隊
-                </h5>
-                <h4 class="card-title text-center text-light fw-bold mt-3 mb-">
-                  サイコロステーキ先輩
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100 bg-dark shadow">
-              <img
-                src="saikorostakesenpai.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title text-center text-warning fst-italic">
-                  鬼殺隊
-                </h5>
-                <h4 class="card-title text-center text-light fw-bold mt-3 mb-">
-                  サイコロステーキ先輩
-                </h4>
-              </div>
-            </div>
-          </div>
+          </div> -->
         </div>
       </ul>
     </div>
